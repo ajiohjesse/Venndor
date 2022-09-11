@@ -1,0 +1,60 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--bg1);
+  height: 80px;
+  padding-right: 2rem;
+  box-shadow: var(--shadow-large);
+  margin-bottom: 1rem;
+}
+
+.image {
+  position: relative;
+  width: 100px;
+  height: 100%;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.row > .buttons > button {
+  background-color: transparent;
+  border: none;
+}
+
+.title {
+  width: 200px;
+  justify-self: left;
+}
+
+.edit {
+  color: var(--info);
+}
+
+.view {
+  color: var(--violet);
+}
+
+.delete {
+  color: var(--danger);
+}
+
+.orderStatus {
+  border: 1px solid var(--info);
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.orderStatus[data-name="declined"] {
+  border-color: var(--danger);
+}
+.orderStatus[data-name="cancelled"] {
+  border-color: var(--warning);
+}
+.orderStatus[data-name="delivered"] {
+  border-color: var(--success);
+}

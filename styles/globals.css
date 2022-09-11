@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  font-size: 62.5%;
+
+  /* LIGHT */
+
+  /* --light: #ffffff;
+  --light100: #fcfcfc;
+  --light200: #afbac5;
+  --light300: #8b939e;
+  --light400: #6e7681; */
+
+  --light: #ffffff;
+  --light100: #fcfcfc;
+  --light200: #d4d4d4;
+  --light300: #8b939e;
+  --light400: #6e7681;
+
+  /* DARK */
+
+  --dark: #0d1017;
+  --dark100: #151b22;
+  --dark200: #21262e;
+  --dark300: #30373d;
+  --dark400: #484f58;
+
+  /* UI */
+
+  --success: #228636;
+  --danger: #da3633;
+  --info: #206feb;
+  --warning: #b2ad10;
+  --brown: #bd561d;
+  --pink: #bf4b8a;
+  --violet: #8957e5;
+  --gold: #ffd500;
+  --pale-blue: #254d8a;
+  --dark-blue: #10294e;
+
+  /* UTILS */
+
+  --max-width: 2000px;
+  --shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  --shadow-card: -6px 0px 10px rgba(0, 0, 0, 0.116);
+  --transition: all 300ms ease;
+  --shadow-large: -5px 5px 10px rgba(0, 0, 0, 0.212);
+  --zoom-in: fade-in 200ms ease-in forwards;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea,
+option {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+body[data-theme="light"] {
+  --bg: var(--light);
+  --bg1: var(--light100);
+  --bg2: var(--light200);
+  --bg3: var(--light300);
+  --bg4: var(--light400);
+
+  --text: var(--dark);
+  --text1: var(--dark100);
+  --text2: var(--dark200);
+  --text3: var(--dark300);
+  --text4: var(--dark400);
+
+  --text-secondary: #076963;
+
+  color: var(--text2);
+  background: var(--bg);
+  transition: background, color, 300ms ease-in-out;
+  overflow-x: hidden;
+  margin-top: 70px;
+  line-height: 1;
+}
+
+body[data-theme="dark"] {
+  --bg: var(--dark);
+  --bg1: var(--dark100);
+  --bg2: var(--dark200);
+  --bg3: var(--dark300);
+  --bg4: var(--dark400);
+
+  --text: var(--light);
+  --text1: var(--light100);
+  --text2: var(--light200);
+  --text3: var(--light300);
+  --text4: var(--light400);
+
+  --text-secondary: #ff6b00;
+}
+
+@keyframes fade-in {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}

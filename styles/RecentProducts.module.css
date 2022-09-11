@@ -1,0 +1,99 @@
+.recent {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-top: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.heading > button {
+  border: none;
+  background-color: transparent;
+  color: var(--info);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.filterIcon {
+  font-size: 2rem;
+}
+
+.filter {
+  position: absolute;
+  z-index: 5;
+  top: 6rem;
+  right: 0;
+  width: 200px;
+  padding: 1.6rem;
+  background-color: var(--bg1);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  animation: var(--zoom-in);
+}
+
+.filterContainer {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+}
+
+.filterContainer > h3 {
+  margin: 0;
+}
+
+.inputGroup {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.inputGroup > input {
+  border: none;
+  outline: none;
+  padding: 6px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--bg2);
+  color: var(--text2);
+}
+
+.filterNotice {
+  line-height: 1.2;
+}
+
+.filterNotice > a {
+  color: var(--info);
+}
+
+.lightBulb {
+  color: var(--text-secondary);
+  margin-right: 6px;
+}
+
+.filterContainer > button {
+  border: none;
+  border-radius: 2px;
+  background-color: var(--info);
+  color: var(--light);
+  padding: 0.6rem 0;
+}
+
+.productGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}

@@ -1,0 +1,198 @@
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.938);
+  z-index: 1000;
+  display: flex;
+
+  animation: scale-in 0.8s ease;
+
+  overflow-y: scroll;
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--info);
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  /* overflow-y: scroll; */
+  height: max-content;
+}
+
+.popup::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--bg1);
+}
+
+.popup::-webkit-scrollbar-thumb {
+  background-color: var(--bg4);
+}
+
+.popupItem {
+  width: 100%;
+  height: max-content;
+  padding: 30px;
+  background-color: var(--bg1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  gap: 30px;
+}
+
+.popupImage {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+}
+
+.popupDetails > ul {
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+  list-style: none;
+}
+
+.title {
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.price {
+  font-size: 2rem;
+  color: var(--success);
+}
+
+.storeName {
+  cursor: pointer;
+  color: var(--info);
+}
+
+.quantity {
+  border: 1px solid var(--text2);
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+}
+
+.quantity > input {
+  border: none;
+  outline: none;
+  width: 40px;
+  background-color: transparent;
+  color: var(--text2);
+}
+
+.description {
+  line-height: 1.7;
+  margin-top: 2rem;
+}
+
+.descHeading {
+  line-height: 0;
+}
+
+.variants {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.variantHeading {
+  margin: 2rem 0 0;
+  line-height: 0;
+}
+
+.variant {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.variant > span {
+  border: 1px solid var(--violet);
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.variant > span > input {
+  cursor: pointer;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.variantTitle {
+  color: var(--violet);
+}
+
+.removeBtn {
+  border: 1px solid var(--info);
+  background-color: transparent;
+  color: var(--info);
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+  display: flex;
+  align-self: flex-end;
+  transition: var(--transition);
+}
+
+.removeBtn:hover {
+  background-color: var(--info);
+  color: var(--light);
+}
+
+.imageModal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1100;
+}
+
+.modalImg {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+  border-radius: 4px;
+}

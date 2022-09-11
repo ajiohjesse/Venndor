@@ -1,0 +1,80 @@
+.cart {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 90%;
+  max-width: 400px;
+  background-color: var(--bg1);
+  transition: all 200ms ease;
+  box-shadow: var(--shadow);
+  overflow-y: scroll;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.headButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  transition: var(--transition);
+  color: var(--info);
+}
+
+.closeBtn:hover {
+  transform: rotate(90deg);
+}
+
+.clearCart {
+  border: 1px solid var(--info);
+  background-color: transparent;
+  color: var(--info);
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  align-self: flex-end;
+  transition: var(--transition);
+}
+
+.clearCart:hover {
+  background-color: var(--info);
+  color: var(--light);
+}
+
+.container {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.value {
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.orderBtn {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: none;
+  background-color: var(--info);
+  color: var(--light);
+  border-radius: 20px;
+  margin-top: 4rem;
+  transition: var(--transition);
+}
+
+.orderBtn:hover {
+  transform: scale(0.96);
+}

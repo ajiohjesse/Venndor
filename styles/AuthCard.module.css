@@ -1,0 +1,62 @@
+.error {
+  color: var(--danger);
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup > label {
+  font-weight: bold;
+  color: var(--text2);
+}
+
+.inputGroup > input {
+  height: 4rem;
+  outline: none;
+  border: 1px solid var(--info);
+  border-radius: 4px;
+  background-color: var(--bg);
+  padding: 1rem;
+  color: var(--text2);
+}
+
+.inputGroup > input[type="number"]::-webkit-inner-spin-button,
+.inputGroup > input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.submitBtn {
+  border: none;
+  background-color: var(--info);
+  color: var(--light100);
+  padding: 1rem;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.submitBtn:active {
+  transform: scale(0.9);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.toggle > button {
+  border: none;
+  background-color: transparent;
+  color: var(--info);
+}

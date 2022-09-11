@@ -1,0 +1,29 @@
+.toggleBtn {
+  border-radius: 4px;
+  border: none;
+  padding: 4px 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.toggleBtn:hover {
+  transform: rotate(30deg);
+}
+
+.sunIcon,
+.moonIcon {
+  padding-top: 4px;
+  font-size: 2.4rem;
+}
+
+.sunIcon {
+  color: var(--light200);
+}
+
+.moonIcon {
+  color: var(--pale-blue);
+  transform: rotateY(180deg);
+}

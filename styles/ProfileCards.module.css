@@ -1,0 +1,141 @@
+.profileCards {
+  width: 100%;
+  max-width: var(--max-width);
+  padding-top: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.profile {
+  width: 100%;
+  height: max-content;
+  background-color: var(--bg1);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-large);
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--bg2);
+  margin-bottom: 1rem;
+}
+
+.heading > h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headIcon {
+  font-size: 3rem;
+  color: var(--info);
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.image {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--bg2);
+}
+
+.username {
+  color: var(--violet);
+}
+.username::before {
+  content: "@";
+}
+
+.text > ul {
+  line-height: 1.7;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.social {
+  margin: 0 auto;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.4rem;
+}
+
+.facebook {
+  color: #4267b2;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.tagline {
+  line-height: 1;
+  color: var(--violet);
+  font-weight: 400;
+}
+
+.text > h4 {
+  margin-top: 4rem;
+}
+
+.storeDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.storeDetails > p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.location {
+  font-size: 2rem;
+  color: var(--violet);
+}
+
+.goldStar {
+  color: var(--gold);
+}
+
+.editIcon {
+  transition: var(--transition);
+  border: none;
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+
+.editIcon:hover {
+  transform: scale(1.1);
+}
