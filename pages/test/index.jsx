@@ -4,6 +4,7 @@ import {
   CREATE_ACCOUNT,
   PUBLISH_ACCOUNT,
 } from "../../graphql/mutations/userMutations";
+import { toast } from "react-hot-toast";
 
 const Test = () => {
   const { data, loading, error } = useQuery(GET_ALL_ACCOUNTS);
